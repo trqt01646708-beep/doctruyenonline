@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truyện Hay TT</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<?php
+session_start(); // Start the session
+require_once("database.php"); // Include the database connection
+?> 
+<header>
+    <div class="logo">
+        <img src="../public/anhlogo.png" alt="Logo" />
+    </div>
+    <ul class="menu">
+        <li><a href="Trangchu.php">Trang chủ</a></li>
+        <li><a href="HOT.php">HOT</a></li>
+        <li><a href="theodoi.php">Theo dõi</a></li>
+        <li><a href="lichsu.php">Lịch sử</a></li>
+        <li class="has-submenu">
+            <a href="#">Thể loại</a>
+            <ul class="submenu">
+                <li><a href="ngontinh.php">Ngôn tình</a></li>
+                <li><a href="trongsinh.php">Trọng sinh</a></li>
+                <li><a href="hethong.php">Hệ Thống</a></li>
+                <li><a href="dothi.php">Đô thị</a></li>
+                <li><a href="dinang.php">Dị năng</a></li>
+                <li><a href="tienhiep.php">Tiên hiệp</a></li>
+                <li><a href="kiemhiep.php">Kiếm hiệp</a></li>
+            </ul>
+        </li>
+        <li><a href="thongbao.php">Thông báo</a></li>
+        <li class="has-submenu">
+            <a href="#">Tài khoản</a>
+            <ul class="submenu">
+                <li><a href="dangnhap.php">Đăng nhập</a></li>
+                <li><a href="dangky.php">Đăng ký</a></li>
+            </ul>
+        </li>
+        <div class="timkiem">
+            <input type="text" placeholder="Tìm kiếm">
+            <img class="icon" src="../public/timkiem.png" alt="Tìm kiếm" />
+        </div>
+    </ul>
+</header>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Truyện Hay TT</h3>
+            <p>Giới thiệu | Liên hệ | Điều Khoản | Chính Sách Bảo Mật</p>
+            <p>Email: truyenhaytt@gmail.com</p>
+            <p>Copyright © 2024 TruyenhayTT</p>
+        </div>
+        <div class="footer-right">
+            <h4>Miễn trừ trách nhiệm</h4>
+            <p>
+                Trang web này cung cấp nội dung truyện chỉ với mục đích giải trí và không chịu trách nhiệm về bất kỳ nội dung quảng cáo, liên kết của bên thứ ba hiển thị trên trang web của chúng tôi.
+            </p>
+        </div>
+        <div class="footer-tags">
+            <div class="tags">
+                <a href="#">Truyện chữ</a>
+                <a href="#">ngôn tình</a>
+                <a href="#">Truyện ngôn tình</a>
+                <a href="#">Truyện xuyên nhanh</a>
+                <a href="#">Truyện kiếm hiệp hay</a>
+                <a href="#">Truyện tiên hiệp hay</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
